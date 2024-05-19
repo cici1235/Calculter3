@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算器</title>
+    <link rel="stylesheet" href="Calcultercss.css"/>
+    <script src="Calculterjs.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <p>金额（美元）：
+            <input type="text" id="dollar" ><br><span id="dollar_error"></span>
+        </p>
+        <p>实时收购汇率：
+            <input type="text" id="rate"><br><span id="rate_error"></span>
+        </p>
+        <p>手续费（%）：
+            <input type="text" id="charge"  ><br><span id="charge_error"></span>
+        </p>
+        <label style="display: inline-block;min-width: 110px;">代付手续费：</label>
+            <input type="text" id="paycharge" ><br><span id="paycharge_error"></span>
+        <br/>
+        <label style="display: inline-block;min-width: 109px;">奈拉汇率：</label>
+            <input type="text" id="naira" class="nairaclass"><br><span id="naira_error"></span>
+            <button type="button" id="button">计算</button>
+             <p id="output" class="output"></p>
+    </div>
+</body>
+</html>
